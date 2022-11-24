@@ -1,0 +1,77 @@
+*{
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+
+
+body {
+  text-align: center;
+  color: grey;
+}
+
+h1{
+	font-family:'Press Start 2P';
+}
+
+h2{
+	font-family:'Press Start 2P';
+}
+
+a{
+	font-family:'Press Start 2P';
+}
+
+
+
+img{
+	width:100%;
+}
+
+#hero-area{
+	background-image: url("../img/hero-bg.svg");
+	background-size: cover;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+	
+}
+
+#three-d-area{
+	background-image: url("../img/hero-bg.svg");
+	background-size: cover;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+	
+}
+
+
+.article{
+	margin:10px auto;
+	height:100vh;
+}
+
+#avatar{
+	width:15em;
+	height:auto;
+	
+}
+
+#avatar img{
+	border-radius:100%;
+	margin-top:35vh;
+	
+}
+
+.hero-area{
+	height:100%;
+	justify-content:center;
+}
+
+#3DPhoneObj{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:999;
+}
