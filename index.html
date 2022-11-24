@@ -121,19 +121,25 @@ scene.add(pLight);
 
 let loader = new THREE.GLTFLoader();
 let obj = null;
+const clock = new THREE.Clock();
+	
+let mixer;
 
 loader.load('/gtab/3d/scene.gltf', function(gltf) {
 	obj = gltf;
 	obj.scene.scale.set(1, 1, 1);
+	mixer = new THREE.AnimationMixer(obj.scene);
+    	mixer.clipAction(obj.animations[0]).play();
 	
 	scene.add(obj.scene);
 });
 
 function animate(){
 	requestAnimationFrame(animate);
+	mixer.update( clock.getDelta() )
 	
-	if(obj)
-		obj.scene.rotation.y += 0.03;
+	obj.scene.rotation.y += 0.03;
+	
 	renderer.render(scene, camera);
 }
 animate();
