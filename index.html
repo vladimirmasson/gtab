@@ -129,7 +129,7 @@ let mixer;
 loader.load('/gtab/3d/scene.gltf', function(gltf) {
 	obj = gltf;
 	obj.scene.scale.set(2, 2, 2);
-	obj.scene.rotation.y = 1;
+	obj.scene.rotation.y = 10;
 	mixer = new THREE.AnimationMixer(obj.scene);
     	mixer.clipAction(obj.animations[0]).play();
 	
