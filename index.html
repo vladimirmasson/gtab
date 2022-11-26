@@ -130,7 +130,7 @@ loader.load('/gtab/3d/scene.gltf', function(gltf) {
 	obj = gltf;
 	obj.scene.scale.set(2, 2, 2);
 	mixer = new THREE.AnimationMixer(obj.scene);
-    	mixer.clipAction(obj.animations[5]).play();
+    	mixer.clipAction(obj.animations[0]).play();
 	
 	scene.add(obj.scene);
 });
